@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Multimedia</title>
+</head>
+<body>
+
+    <!-- home secton for form and background image -->
+    <section class="home">
+        <form>
+            <label for="firstname">FirstName:</label>
+            <input type="text" required placeholder="Enter your first name"/>
+            <label for="lastname">Last Name: </label>
+            <input type="text" required placeholder="Enter your last name"/>
+            <label for="email">Email:</label>
+            <input type="email" required placeholder="Enter your email"/>
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" required />
+            <label for="password">Password</label>
+            <input type="password" required/>
+
+            <!-- gender fieldset -->
+            <fieldset>
+                <legend>Gender</legend>
+                <div style="width: 400px;  padding-left: 20px;">
+                    <label style="display:flex; flex-direction:row; justify-content:space-between;" for="male">Male<input id="male" name="gender" value="male"  type="radio" /></label>
+                    <label style="display:flex; flex-direction:row; justify-content:space-between;" for="female">Female<input id="female" name="gender" value="female" type="radio" /></label>
+                </div>
+            </fieldset>
+            
+
+            <!-- hobies fieldset -->
+            <fieldset>
+                <legend>Hobies</legend>
+                <div style="width: 400px; padding-left: 20px;">
+                    <label style="display:flex; flex-direction:row; justify-content:space-between;" for="football">Playing Football <input id="football" type="checkbox" value="football" name="hobie"/> </label>
+                    <label style="display:flex; flex-direction:row; justify-content:space-between;">Coding <input id="coding" type="checkbox" value="coding" name="hobie"/> </label>
+                    <label style="display:flex; flex-direction:row; justify-content:space-between;">Cybersecurity capture the flag(CTF) <input type="checkbox" value="cybersecurity", name="hobie"/> </label>
+                </div>
+            </fieldset>
+
+            <!-- select option  -->
+            <fieldset>
+                <legend>Select Favorite Planet</legend>
+                <select name="favplanet" id="planet">
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Earth">Earth</option>
+                    <option value="Uranus">Uranus</option>
+                    <option value="Saturn">Saturn</option>
+                </select>
+            </fieldset>
+
+            <!-- submit input -->
+            <div style="display:flex; justify-content:center; margin-top:20px;">
+                <input type="submit" value="submit"/>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- multimedia section -->
+    <section class="multimedia">
+        <h1 style="text-align:center;">Quantam Computers</h1>
+        <div class="video-container">
+            <video src="./video/y2mate.com - Michio Kaku Quantum computing is the next revolution_720p.mp4" controls mute autoplay></video>
+        </div>
+        <div class="float-container">
+            <p><img  src="./images/quantam_computing.jpg"> Quantum computing uses quantam mechanics principles. Unlike classical computers which use bits (0 and 1), quantum computers use qubits.
+            qubits can be in superposition meaning that they can be in 0 and 1 at the same time, allowing quantum computers to process many possibilities simultaneously. Then theres
+            quantum entanglement, in which Einstein defined it as 'spook action at a distance'. When qubits are entangled, the state of a qubit affects another qubit(the state of a qubit affects another qubit, no matter the distance).
+            Quantum gates manipulate qubits. Unlike classical gates which are used to perform simple operations, quantum gates perform rotations in a quantum state space.  Quantum computers are very sensitive to the environment.
+            Decoherence, which causes a qubit to loose it's state, hence the need for operating quantum computers are low temperatures(colder than space).
+        </p>
+        </div>
+
+        <h1 style="text-align: center;">Healing Songs</h1>
+        <div class="audio-container">
+            <ul style="padding-left:20px;">
+                <li><p>Ocean hillsong united</p></li>
+            </ul>
+            <audio src="./audio/oceans_hillsong_united.mp3" controls ></audio>
+        </div>
+    </section>
+
+    <!-- table section -->
+    <section>
+        <h1 class="title">Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>address</th>
+                    <th>mobile</th>
+                    <th>emails</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Tony Stalk</td>
+                    <td>Olivia City</td>
+                    <td>+130 113 330</td>
+                    <td>tonyStalk@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Steve Rodger</td>
+                    <td>Brooklyn</td>
+                    <td>+130 102 103</td>
+                    <td>steveRodgers@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Thor Odinson</td>
+                    <td>Asgard</td>
+                    <td>+1 113 330</td>
+                    <td>odinsonThor@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Bruce Barner</td>
+                    <td>Washington City</td>
+                    <td>+130 100 001</td>
+                    <td>bruceBarner@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Natasha Raminoff</td>
+                    <td>Siberia Russia</td>
+                    <td>+13 100 001</td>
+                    <td>natshaRaminoff@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- list section -->
+    <section>
+        <div class="order-list">
+            <ol style="padding-left:20px; list-style-type: lower-roman;">
+                <li>Canis Major Dwarf Galaxy</li>
+                <li>Sagittarius Dwarf Elliptical Galaxy</li>
+                <li>Andromeda Galaxy</li>
+                <li>Triangulum Galaxy</li>
+                <li>Milky Way Galaxy</li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
